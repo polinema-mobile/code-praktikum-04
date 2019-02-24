@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnJumlah"
+        android:id="@+id/btnLuas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -32,7 +32,7 @@
         android:text="Calculator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnJumlah" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLuas" />
 
     <Button
         android:id="@+id/btnRecycler"
