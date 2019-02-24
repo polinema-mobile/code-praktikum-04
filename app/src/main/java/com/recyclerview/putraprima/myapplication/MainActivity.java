@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnLuas,btnCalculator,btnRecycler;
+    private Button btnLuas,btnCalculator,btnRecycler,btnBrowser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         btnLuas = findViewById(R.id.btnLuas);
         btnCalculator = findViewById(R.id.btnCalculator);
         btnRecycler = findViewById(R.id.btnRecycler);
+        btnBrowser = findViewById(R.id.btnBrowser);
 
         btnLuas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnBrowser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),BrowserActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
